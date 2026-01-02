@@ -45,7 +45,7 @@ const Footer = ({ variant = 'light' }) => {
                 </span>
 
                 <span className="footer-meta">
-                    © 2025 Paul Guinness. All rights reserved.
+                    &copy; 2026 Paul Guinness. All rights reserved.
                 </span>
 
             </div>
