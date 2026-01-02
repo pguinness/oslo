@@ -32,7 +32,7 @@ const SoundGate = () => {
             </button>
 
             <audio ref={audioRef} onEnded={handleEnded}>
-                <source src="/audio/hurt-you-instrumental.mp3" type="audio/mpeg" />
+                <source src={`${process.env.PUBLIC_URL}/audio/hurt-you-instrumental.mp3`} type="audio/mpeg" />
             </audio>
         </section>
     );
