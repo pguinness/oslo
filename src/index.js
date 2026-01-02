@@ -7,13 +7,15 @@ import reportWebVitals from './reportWebVitals';
 import 'leaflet/dist/leaflet.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const base = '/oslo';
+
 root.render(
     <React.StrictMode>
-        <BrowserRouter>
+        <BrowserRouter basename={base}>
             <App />
         </BrowserRouter>
     </React.StrictMode>
 );
 
 // https://bit.ly/CRA-vitals
-reportWebVitals(console.log);
+reportWebVitals();
