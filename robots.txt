@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pguinness.github.io/oslo/sitemap.xml
