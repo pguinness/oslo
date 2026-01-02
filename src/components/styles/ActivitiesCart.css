@@ -1,0 +1,101 @@
+.cart {
+    position: sticky;
+    top: 20vh;
+    background: transparent;
+    padding: 1.5rem;
+    height: fit-content;
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: none;
+}
+
+.cart h4 {
+    font-weight: 500;
+    margin: 0.5rem 0 1.5rem;
+    font-size: 1.15rem;
+}
+
+.cart-empty {
+    padding: 0.6rem 0;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* items list */
+.cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: height 0.25s ease;
+}
+
+/* empty state / generic list item */
+.cart-items li {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* individual cart item */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 0;
+    animation: fadeInUp 0.35s ease;
+}
+
+/* remove button */
+.remove {
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: opacity 0.2s ease;
+}
+
+.remove:hover {
+    opacity: 0.8;
+}
+
+/* to keep the same structure and line height when the list is empty */
+.remove.ghost {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* remove animation state */
+.cart-item.removing {
+    animation: fadeOutDown 0.25s ease forwards;
+    pointer-events: none;
+}
+
+/* animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOutDown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+    .cart {
+        position: static;
+        height: auto;
+    }
+}

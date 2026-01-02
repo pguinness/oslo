@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "title": "Design Hotels",
+        "description": "Waterfront rooms, late dinners, silence.",
+        "location": "The Thief",
+        "alt": "Design hotel at night"
+    },
+    {
+        "id": 1,
+        "title": "Fine Dining",
+        "description": "Intimate spaces and seasonal menus.",
+        "location": "Fjord Restaurant",
+        "alt": "Fine dining at night"
+    },
+    {
+        "id": 2,
+        "title": "Rooftop Evenings",
+        "description": "City lights, quiet conversations, and views across Oslo.",
+        "location": "Summit Bar",
+        "alt": "Rooftop bar at night"
+    }
+]

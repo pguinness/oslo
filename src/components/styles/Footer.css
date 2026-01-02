@@ -1,0 +1,100 @@
+.site-footer {
+    padding: 6rem 0 4rem;
+    margin-top: 12rem;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+/* Variants */
+.footer-dark {
+    background-color: #0E1012;
+    color: #9EA4A8;
+}
+
+.footer-light {
+    background-color: #E7EAE6;
+    color: #3A3F44;
+}
+
+/* Brand */
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+footer .logo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    line-height: 1;
+}
+
+footer .logo-grid span {
+    font-weight: 400;
+}
+
+/* Text */
+.footer-text {
+    max-width: 360px;
+    font-weight: 300;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+.footer-meta {
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+}
+
+.footer-meta a {
+    color: currentColor;
+    text-decoration: none;
+    opacity: 0.65;
+    border-bottom: 1px solid transparent;
+    transition: opacity 0.25s ease, border-color 0.25s ease;
+}
+
+.footer-meta a:hover {
+    opacity: 1;
+    border-bottom-color: currentColor;
+}
+
+/* Navigation */
+.footer-nav {
+    display: flex;
+    gap: 2rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: currentColor;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.footer-nav a:hover {
+    opacity: 1;
+}
+
+/* Light variant overrides */
+.footer-light .footer-text {
+    opacity: 0.8;
+}
+
+.footer-light .footer-meta {
+    color: #6F757A;
+    opacity: 1;
+}
+
+.footer-light .footer-nav a {
+    opacity: 0.7;
+}

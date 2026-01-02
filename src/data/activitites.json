@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "name": "Fjord Cruise",
+        "description": "Experience Oslo from the water, surrounded by silence and light."
+    },
+    {
+        "id": 1,
+        "name": "Forest Hiking",
+        "description": "Walk through Nordmarka, where nature begins at the city's edge."
+    },
+    {
+        "id": 2,
+        "name": "Fjord Kayak Tour",
+        "description": "Glide across calm waters, tracing the fjord at your own pace."
+    },
+    {
+        "id": 3,
+        "name": "Indoor Skiing",
+        "description": "Ski year-round on snow-covered slopes and playful parks at SNØ."
+    },
+    {
+        "id": 4,
+        "name": "Glass Igloo",
+        "description": "Sleep beneath the northern sky, wrapped in warmth and quiet."
+    },
+    {
+        "id": 5,
+        "name": "City Tour",
+        "description": "Discover Oslo's streets, where history, design, and daily life meet."
+    }
+]

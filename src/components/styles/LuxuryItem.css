@@ -1,0 +1,91 @@
+.luxury-item {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.luxury-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.luxury-image {
+    flex: 1.2;
+}
+
+.luxury-text {
+    flex: 1;
+}
+
+.luxury-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(0.9) saturate(0.85);
+}
+
+.luxury-text h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.luxury-text p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 360px;
+    opacity: 0.8;
+}
+
+.luxury-note {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+#luxury-note-mobile {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .luxury-item {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+        align-items: start;
+    }
+
+    .luxury-item.reverse {
+        flex-direction: column-reverse; /* cancel alternating logic */
+    }
+
+    .luxury-image {
+        width: 100%;
+    }
+
+    .after-dark img {
+        margin-top: 0 !important;
+    }
+
+    .luxury-text {
+        max-width: 100%;
+    }
+
+    .luxury-text p {
+        max-width: none;
+        margin-bottom: 1.5rem;
+    }
+
+    #luxury-note-desktop {
+        display: none;
+    }
+
+    #luxury-note-mobile {
+        display: block;
+        margin-top: 1.5rem;
+    }
+}

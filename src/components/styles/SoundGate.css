@@ -1,0 +1,24 @@
+.sound-gate {
+    padding-top: 0;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sound-button {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #E6E8E7;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sound-button:hover {
+    border-color: rgba(255,255,255,0.6);
+}

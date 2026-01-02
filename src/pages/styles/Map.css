@@ -1,0 +1,124 @@
+.map-section {
+    padding-top: 1.25rem;
+}
+
+.map-section p {
+    font-size: 1.25rem;
+    line-height: 1.9;
+}
+
+/* links */
+.map-section a {
+    position: relative;
+    color: currentColor;
+    opacity: .65;
+    text-decoration: none;
+    transition: opacity .3s ease;
+}
+
+.map-section a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.1em;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.map-section a:hover { opacity: 1; }
+.map-section a:hover::after { opacity: .5; }
+
+/* map wrapper */
+.map-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-top: 3rem;
+    background: #000;
+    overflow: hidden;
+}
+
+.leaflet-container { width: 100%; height: 100%; }
+
+/* Leaflet Controls */
+.leaflet-bar { border-radius: 0 !important; }
+.leaflet-touch .leaflet-bar { border: none !important; }
+
+.leaflet-container .leaflet-control-zoom a {
+    background: rgba(255,255,255,.9);
+    color: #111;
+    border: none;
+    box-shadow: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    border-radius: 0;
+    opacity: 1 !important;
+    transition: background .2s ease, color .2s ease;
+}
+
+/* hover only where hover exists */
+@media (hover: hover) {
+    .leaflet-container .leaflet-control-zoom a:hover {
+        background: #111;
+        color: #fff;
+    }
+}
+
+/* press feedback */
+.leaflet-container .leaflet-control-zoom a:active {
+    background: #111;
+    color: #fff;
+}
+
+/* disabled */
+.leaflet-container .leaflet-bar a.leaflet-disabled {
+    background: rgba(255,255,255,.6);
+    color: rgba(0,0,0,.35);
+    cursor: default;
+}
+
+/* positioning */
+.leaflet-left .leaflet-control {
+    margin: 1.5rem !important;
+}
+
+/* reset Button */
+.map-reset {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 1000;
+    background: rgba(255,255,255,.9);
+    border: none;
+    padding: .5rem .75rem;
+    font-family: 'Inter', sans-serif;
+    font-size: .8rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background .2s ease, color .2s ease;
+}
+
+@media (hover: hover) {
+    .map-reset:hover {
+        background: #111;
+        color: #fff;
+    }
+}
+
+.map-reset:active {
+    background: #111;
+    color: #fff;
+}
+
+.map-reset:focus { outline: none; }
+
+/* mobile */
+@media (max-width: 768px) {
+    .map-wrapper { aspect-ratio: 1 / 1; }
+    .leaflet-left .leaflet-control { margin: .75rem !important; }
+    .map-reset { top: .75rem; right: .75rem; }
+}

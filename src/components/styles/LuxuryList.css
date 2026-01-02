@@ -1,0 +1,13 @@
+.luxury-list {
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+@media (max-width: 992px) {
+    .luxury-list {
+        margin-top: 15vh;
+        gap: 4rem;
+    }
+}
