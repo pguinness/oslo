@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/oslo/static/css/main.dfb6996d.css",
-    "main.js": "/oslo/static/js/main.77574e02.js",
+    "main.js": "/oslo/static/js/main.7968ae80.js",
     "static/js/453.70377af6.chunk.js": "/oslo/static/js/453.70377af6.chunk.js",
     "static/media/head.jpg": "/oslo/static/media/head.91764af4681b1263a279.jpg",
     "index.html": "/oslo/index.html",
     "main.dfb6996d.css.map": "/oslo/static/css/main.dfb6996d.css.map",
-    "main.77574e02.js.map": "/oslo/static/js/main.77574e02.js.map",
+    "main.7968ae80.js.map": "/oslo/static/js/main.7968ae80.js.map",
     "453.70377af6.chunk.js.map": "/oslo/static/js/453.70377af6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dfb6996d.css",
-    "static/js/main.77574e02.js"
+    "static/js/main.7968ae80.js"
   ]
 }
