@@ -49,7 +49,7 @@ const Home = () => {
                             <p>This is a city shaped not only by architecture, but by water, wood, and light.</p>
                         </div>
                         <div className="ti-image">
-                            <img src="img/nature.jpg" alt="Nature" />
+                            <img src={`${process.env.PUBLIC_URL}/img/nature.jpg`} alt="Nature" />
                         </div>
                     </div>
                 </section>
@@ -80,7 +80,7 @@ const Home = () => {
                     <section className="after-dark">
                         <h2>After Dark</h2>
                         <p>Quiet hotels, late dinners, and the city reflected on water.</p>
-                        <img src="img/after-dark.jpg" alt="After Dark" />
+                        <img src={`${process.env.PUBLIC_URL}/img/after-dark.jpg`} alt="After Dark" />
                         <LuxuryList />
                     </section>
                 </div>

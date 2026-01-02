@@ -4,7 +4,7 @@ const ActivityCard = ({ activity, onAdd, isSelected }) => {
     return (
         <article className="activity-card">
             <img
-                src={`img/activities/${activity.id}.jpg`}
+                src={`${process.env.PUBLIC_URL}/img/activities/${activity.id}.jpg`}
                 alt={activity.name}
             />
             <div className="activity-content">

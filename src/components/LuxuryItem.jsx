@@ -6,7 +6,7 @@ const LuxuryItem = ({ item, reverse }) => {
             <span className="luxury-note" id="luxury-note-mobile">{item.location}</span>
             
             <div className="luxury-image">
-                <img src={"img/luxury/" + item.id + ".jpg"} alt={item.alt} />
+                <img src={`${process.env.PUBLIC_URL}/img/luxury/${item.id}.jpg`} alt={item.alt} />
             </div>
 
             <div className="luxury-text">
